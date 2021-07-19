@@ -1,1 +1,1 @@
-# AI & NN
+# AI-Course
