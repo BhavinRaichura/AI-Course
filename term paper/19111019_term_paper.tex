@@ -1,0 +1,134 @@
+\documentclass[10pt,a4paper,twoside]{article}
+\usepackage[dutch]{babel}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{float,flafter}	
+\usepackage{hyperref}
+\usepackage{inputenc}
+\setlength\paperwidth{20.999cm}\setlength\paperheight{29.699cm}\setlength\voffset{-1in}\setlength\hoffset{-1in}\setlength\topmargin{1cm}\setlength\headheight{12pt}\setlength\headsep{0cm}\setlength\footskip{1.131cm}\setlength\textheight{25cm}\setlength\oddsidemargin{2.499cm}\setlength\textwidth{15.999cm}
+\begin{document}
+\begin{center}
+\vspace{.3cm}
+{\bf {\huge AI-based Proctoring System for Online Exams}}
+\vspace{.3cm}
+\end{center}
+{\bf Name:}  Bhavin Raichura\\
+{\bf Roll no:}  19111019 \\
+{\bf Subject:}  Artificial Intelligence \\
+{\bf Branch: }  Biomedical Engineering \hspace{\fill}   \\
+\hrule
+
+\vspace{.5cm}
+\vspace{.4cm}
+
+\renewcommand{\abstractname}{Abstract}
+
+\begin{abstract}
+Almost all educational institutions have been compelled to convert to an online education format in the last year due to the pandemic crisis. Colleges began offering online lectures and tests for a variety of subjects. I've seen kids enrol in online classes and then abandon them after a few weeks. He did not study yet received high grades on the online exam owing to exam theft or cheating. The quality of an online certificate is directly proportional to the testing procedure that was used to get it. Exams must be proctored when taken online because of the way they are monitored at schools and universities. I feel that a Proctoring System based on Artificial Intelligence is urgently needed (AIPS). Using such devices for continuous monitoring of digital tests will also become commonplace in the near future. That is why I decided to write my term paper on this topic.
+\item In this term paper,first briefly introduced the AI-based proctoring system (AIPS). after that the technologies required for this (face recognition, eye moment detection, voice recognition etc.) and components (eg mobile or laptop, webcam, microphone) will be explained. This paper also talks about the development of this technology.  By using this technique, educational institutes don’t need to delay or postpone examinations amid the COVID-19 outbreak. So, after this situation how it will be beneficial for the future in our education system.
+\end{abstract} 
+
+\newline
+\item
+\item
+{\bf {\Large This term paper will highlight the following aspects:  }}\\
+\begin{itemize}
+\end{itemize}
+
+\item 
+\begin{enumerate}
+\item Introduction of proctoring system (PS)
+\item AI in proctoring system
+\item Working of AIPS
+\item Parameters for AIPS
+\item Development of AIPS
+\item Future
+\item Conclusion
+\item Reference 
+\end{enumerate}
+
+
+\section{Introduction of Remote Proctoring System}
+\item The process of verifying, approving, and controlling the online test process in a scalable manner is known as remote proctoring. It's a tool that allows businesses to conduct assessments anywhere and at any time while maintaining strict security requirements. This technology can help ensure that students do not cheat or use unfair methods during tests.
+\item One invigilator can check 30-40 students in an offline test, but we need additional supervisors to administer the exam. In a pandemic, however, an offline exam is not viable. Online proctoring may offer a virtual AI-invigilator for each student through the internet via the candidate's webcam, and can record each test session from start to end through video, as well as capture desktop displays, chat logs, and photos.
+
+
+\section{AI in proctoring system}
+\item The AI-based Proctoring System is a trained model that integrates Video Proctoring, Image Proctoring, Auto Proctoring, and Candidate Identity Verification. Each event specified in the system is developed, trained, and refined hundreds of times. Every one of the hundreds of events that occur as a result of the process is classed as prospective fraud, theft, or fraud. All of the occurrences will determine whether or not the session should be flagged for a possible breach of integrity.
+\item A lot of AI technologies (such as facial recognition, voice recognition, eye movement detection, auto proctoring, and so on) may be utilised to improve remote proctoring services and give institutions a more efficient approach to administer exams. 
+
+
+\section{Working of AIPS}
+\item Every event specified in the system is developed, trained, and refined thousands of times using AI-based remote proctoring system. An incident might be a single act or a pattern of identity theft, content theft, or deception. If someone is caught gazing off-screen to the left, for example, it might be deemed a single data point, and that area of the video is separated and tagged as unfair means. When the quantity of such data points for the same behaviour exceeds a certain threshold, a continuous cycle of constructing, training, and refining begins. Every one of the hundreds of events that occur during the process is classified as possible fraud, theft, or cheating.
+\item All of the occurrences would determine whether or not the session should be flagged as having a suspected integrity violation. A range of AI technologies may be utilised to improve remote proctoring services and give institutions with a more effective manner of conducting exams. 
+
+
+\section{Parameters for AIPS}
+\item In AIPS, several AI-ML-based models are utilised to automatically identify the confirmed candidate and collect video, audio, and other data. The system will then examine itself and offer feedback to the human observer.
+\item For this it needs some parameters
+
+\begin{itemize}
+\item \textbf{Camera}  : In AIPS, the camera is extremely crucial. During the examination, it will live view or record the candidate's video, and the Controller of Assessment will assess his behaviour from the video to see if the student is cheating or using unfair tactics. The system can ensure that just the registered user is delivering the exam using facial recognition technology, preventing impersonation. For face moment reorganisation, Python libraries such as OpenCV, Dlib, and Tensorflow are employed.
+
+\item \textbf{Mic} : Audio may be recorded and analysed with a microphone. The analysis may then be utilised to see if the user is being helped outside of the camera's field of view or via a call to another device. Because background noise might be misinterpreted as dishonest behaviour, software must be educated to avoid false positives.
+
+\item \textbf{Human Proctor} : The current methods do not have a 100 percent accuracy rate. For dealing with false positives and assisting with grievance resolution, these require human monitoring. Multiple inputs, including as audio and video, as well as background application data, are processed by the AIPS. If any of these inputs have a false positive, the PO can compare the inputs from all of these sources to gain a better notion before labelling the case a copy case. There's a chance that the AI will mistake a calculator for a phone and report the user as a "copy case" because it's a mobile device. Human monitoring will be essential in this scenario to avoid a pupil from being falsely charged.
+
+\item \textbf{Screen Share/ Recording } : The user's screen is therefore shared with the PO. The proctor can then look at the student's open tabs to make sure they aren't looking for solutions on other websites or in their notes. This can also be recorded by AIPS for future reference in the event of a disagreement over a suspicious behaviour alert produced by the system. By capturing evidence of other apps being used to cheat, this goes hand in hand with the Application Lock setting.
+
+\item \textbf{Application Environment Lock} : The application environment lock setting ensures that no user may access other applications while the test is running in the background. During the trial time, AIPS guarantees that no other communication programmes or documents are available. This may be accomplished via the "Secure Browser" approach, which prevents tab switching. This strategy can also be used to restrict the user from looking for answers online.
+
+\item \textbf{Biometrics} : The system may ensure that the user is not impersonating another individual by employing biometric verification. It also adds another layer of security to a simple user ID and password that can be easily shared. It may also be used to ensure that the user does not switch locations with anybody else during the paper. Facial recognition may also be used to do many jobs at the same time throughout the exam.
+
+\item \textbf{Gaze Tracing} : Students' behaviour can be monitored for copying utilising external resources such as notes or textbooks using gaze tracking.
+
+\item \textbf{Random Questions Bank} : The paper might be made up of randomly picked questions from a pre-designed question bank, and questions could be sent one by one on the device. As a result, each user will receive a unique document. This strategy will also assist to prevent copying by allowing students to share their solutions to a specific question, as no two students will have the same amount of questions.
+
+\end{itemize}
+
+
+\section{Development of AIPS}
+\item
+The AI will have four vision-based capabilities which are combined using multi-threading so that they can work together:
+\begin{enumerate}
+\item     Gaze tracking
+\item     Mouth open or close
+\item     Person Counting
+\item     Mobile phone detection
+\end{enumerate}
+Aside from that, the test-voice taker's will be captured, turned to text, and compared to the content of the question paper to determine the number of frequent terms stated by the test-taker. Some python libraries which can help us to develop AIPS are :
+\begin{itemize}
+\item OpenCV
+\item Dlib
+\item TensorFlow
+\item Speech\_recognition
+\item PyAudio
+\item NLTK
+\end{itemize}
+\item
+Track the test-eyeballs taker's and indicate whether he's gazing to the left, right, or up, as he might to look at a notepad or signal to someone. Dlib's face key-point detector and OpenCV for image processing can be used to do this. The distances between the spots rise as the user opens his or her lips, and if the increase in distance is more than a particular number for at least three outside pairs and two inner pairs, infringement is detected.
+\item
+For person counting and mobile phone detection, we can uses the pre-trained weights of YOLOv3 trained on the COCO dataset to detect people and mobile phones in the webcam feed.
+
+
+\section{Future }
+\item When a company conducts an assessment using remote proctoring rather to the usual pen-and-paper technique, there are several advantages. There is no need to set up specialised test sites to administer the tests, making scheduling the exams easy. Examiner-examinee communication is more streamlined, hassle-free, and efficient.
+The results of tests can be obtained quickly, in some cases practically instantly.
+\item Due to the COVID-19 epidemic, it is now more important than ever to use remote proctoring services to administer uninterrupted tests and guarantee that applicants do not commit malpractices during these online exams. This revolutionary upheaval brought on by the epidemic will not go away in the coming years. In any case, it simply serves to support the notion that online learning is not only conceivable, but also very successful and practical. More and more institutes are offering distance education courses and whole degrees that may be completed from the convenience of one's own home. In these circumstances, AIPS is here to stay, and it will only grow in the future.
+
+
+\section{Conclusion}
+The pervasiveness and trust level of an AI-based system in general. More importantly, the AIPS system is based on human principles (such as cheating prediction, sanctity of exams etc.). The essential challenge that arises is how we might design AIPS that are trust enabled. There were no publications that reflected the difference between human trust value to AIPS and real classroom based proctoring systems in the available papers. Artificial Intelligence that can be trusted will be a term in the future.
+
+
+\section{Reference}
+\begin{enumerate}
+\item https://www.tftus.com/blog/remote-proctoring-using-ai-enabling-seamless-management-of-online-examination
+\item https://link.springer.com/article/10.1007/s10639-021-10597-x
+\item https://towardsdatascience.com/automating-online-proctoring-using-ai-e429086743c8
+\item https://papers.ssrn.com/sol3/papers.cfm?abstract\_id=3866446
+\end{enumerate}
+
+\end{document}
+
+
